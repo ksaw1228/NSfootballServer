@@ -4,15 +4,22 @@ const MongoClient = require('mongodb').MongoClient
 const path = require('path');
 const axios = require('axios');
 const cors = require('cors'); //var
-const API_KEY = process.env.API_KEY
+const rateLimit = require("express-rate-limit");
 
 require('dotenv').config();
 
+const apiLimiter = rateLimit({
+  windowMs: 10 * 60 * 1000,
+  max: 50,
+  message: "Too many requests from this IP, please try again later.",
+});
 
+app.use("/", apiLimiter)
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use( '/', express.static( path.join(__dirname, 'public') ))
 app.use(cors());
+
 
 var db;
 MongoClient.connect(process.env.MONGO_DB_URL,(err,client) => {
@@ -32,7 +39,7 @@ function getData() {
 
 async function updateDB(leagueName){
     const url = `https://api.football-data.org/v4/competitions/${leagueName}/matches?season=2023`
-    const headers = { "X-Auth-Token": process.env.API_KEY}
+    const headers = { "X-Auth-Token":process.env.API_KEY}
     try {
       const response = await axios.get(url, { headers: headers });
       const matches = response.data.matches
@@ -101,21 +108,25 @@ app.get("/api/all", async (req, res) => {
 
 app.get('/api/:id',async (req,res) => {
   const reqLeague = req.params.id
-  console.log(reqLeague)
-  const leagues = reqLeague.split('+')
+  //데이터검증
+  if(reqLeague.length > 30){
+    res.send(500)
+  }else{
+    const leagues = reqLeague.split('+')
 
-  try {
-    const results = await Promise.all(leagues.map((league) => db.collection(league).find().toArray()));
-
-    const data = results.reduce((acc, curr, index) => {
-      acc[leagues[index]] = curr;
-      return acc;
-    }, {});
-
-    res.status(200).json(data);
-    console.log("API success, fetched data");
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ error: "DB error." });
+    try {
+      const results = await Promise.all(leagues.map((league) => db.collection(league).find().toArray()));
+  
+      const data = results.reduce((acc, curr, index) => {
+        acc[leagues[index]] = curr;
+        return acc;
+      }, {});
+  
+      res.status(200).json(data);
+      console.log("API success, fetched data");
+    } catch (err) {
+      console.error(err);
+      res.status(500).json({ error: "DB error." });
+    }
   }
 })
