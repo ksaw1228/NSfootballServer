@@ -2,9 +2,9 @@
 
 ## 배포 상황
 
-- **앱스토어**: 제출 심사중
-- **플레이스토어**: [www.naver.com](www.naver.com)
-- **Expo**: [expo://expo.host/@dnals528@NSfootball](expo://expo.host/@dnals528@NSfootball)
+- :apple: **앱스토어**: 제출 심사중
+- :iphone: **플레이스토어**: [www.naver.com](www.naver.com)
+- :globe_with_meridians: **Expo**: [Expo App](https://expo.dev/@dnals528/NSfootball)
 
 ## 프로젝트 소개
 
@@ -12,7 +12,7 @@
 
 ## 주요 기능
 
-1. 경기 일정 확인
-2. 사용자 기호에 따른 경기 결과 숨기기/표시하기
-3. 다음날 아침 하이라이트 시청을 위한 옵션
+1. :calendar: 경기 일정 확인
+2. :eye: 사용자 기호에 따른 경기 결과 숨기기/표시하기
+3. :tv: 다음날 아침 하이라이트 시청을 위한 옵션
 
