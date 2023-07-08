@@ -3,7 +3,7 @@
 ## 배포 상황
 
 - :apple: **앱스토어**: 제출 심사중
-- :iphone: **플레이스토어**: [www.playstore.com](www.playstore.com)
+- :iphone: **플레이스토어**: 제출 심사중
 - :globe_with_meridians: **Expo**: [Expo App](https://expo.dev/@dnals528/NSfootball)
 
 ## 프로젝트 소개
