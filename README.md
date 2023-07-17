@@ -1,5 +1,8 @@
 # NSfootball
 
+## 네이티브 코드
+- **네이티브 코드**:[NSfootball-Native](https://github.com/ksaw1228/NSfootball-native)
+
 ## 배포 상황
 
 - :apple: **앱스토어**: 제출 심사중
