@@ -6,7 +6,7 @@
 ## 배포 상황
 
 - :apple: **앱스토어**: 제출 심사중
-- :iphone: **플레이스토어**: [NSfootball](https://play.google.com/store/apps/details?id=com.dnals528.NSfootball) !현재 오류로 인해 어플이 실행되지 않고 있습니다 Expo를 이용해주세요
+- :iphone: **플레이스토어**: [NSfootball](https://play.google.com/store/apps/details?id=com.dnals528.NSfootball)
 - :globe_with_meridians: **Expo**: [Expo App](https://expo.dev/@dnals528/NSfootball)
 
 ## 프로젝트 소개
