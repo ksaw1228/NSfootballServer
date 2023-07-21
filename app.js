@@ -5,7 +5,7 @@ const rateLimit = require("express-rate-limit");
 const updateAllLeagues = require("./model/match.model");
 const apiRouters = require('./routes/match.router')
 
-let seasonStarted = false
+let seasonStarted = true
 
 require('dotenv').config();
 
@@ -26,7 +26,7 @@ app.use('/api',apiRouters)
 
 app.listen(process.env.PORT,()=>{
   console.log(process.env.PORT+"on")
-  updateAllLeagues.updateAllLeagues()//1시간에 한번씩 추가해야댐
+  if(seasonStarted){setInterval(updateAllLeagues.updateAllLeagues, 60 * 60 * 1000)}
 })
 
 
