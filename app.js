@@ -5,7 +5,7 @@ const rateLimit = require("express-rate-limit");
 const updateAllLeagues = require("./model/match.model");
 const apiRouters = require('./routes/match.router')
 
-let seasonStarted = true
+let seasonStarted = false
 
 require('dotenv').config();
 
