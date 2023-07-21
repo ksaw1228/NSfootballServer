@@ -58,6 +58,7 @@ async function updateAllLeagues() {
   
   //경기결과 DB업데이트 시키는 함수
   async function changeMatchesResultToDB(leagueName, matches) {
+    const db = await dbPromise;
     for (let i = 0; i < matches.length; i++) {
       await db.collection(leagueName).findOneAndUpdate(
         { id: matches[i].id },
