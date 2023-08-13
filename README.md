@@ -14,6 +14,13 @@
 "NSfootball"은 경기 결과를 사용자의 기호에 따라 숨기거나 표시할 수 있는 기능을 제공하는 축구일정 어플리케이션 입니다.<br>
 아시아 국가에서 유럽 축구 경기를 실시간으로 시청하기 어려운 사용자들의 스포일러를 방지하기 위해 개발되었습니다.
 
+## 🛠️Stacks
+
+### Front-End : <img src="https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"/>&nbsp;
+### Back-End :  <img src="https://img.shields.io/badge/ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white"/>&nbsp;<img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"/>&nbsp;
+### DataBase : <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"/>&nbsp;
+### IaaS : <img src="https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white"/>&nbsp;
+
 ## 주요 기능
 
 1. :calendar: 경기 일정 확인
