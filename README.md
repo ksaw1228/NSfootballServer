@@ -1,18 +1,12 @@
 # NSfootball
-
-## 네이티브 코드
-- **네이티브 코드**:[NSfootball-Native](https://github.com/ksaw1228/NSfootball-native)
+사용자의 기호에 따라 경기 결과를 숨기거나  표시할 수 있는 기능을 제공하여 스포일러를 방지해주는 축구 일정 어플리케이션 입니다.
+- **프론트 코드**:[NSfootball-Native](https://github.com/ksaw1228/NSfootball-native)
 
 ## 배포 상황
 
 - :apple: **앱스토어**: 제출 심사중
 - :iphone: **플레이스토어**: [NSfootball](https://play.google.com/store/apps/details?id=com.dnals528.NSfootball)
 - :globe_with_meridians: **Expo**: [Expo App](https://expo.dev/@dnals528/NSfootball)
-
-## 프로젝트 소개
-
-축구 일정을 제공하는 외부 API를 사용하여 해당 데이터 중 경기 결과 데이터를 사용자의 기호에 따라 <br>
-숨기거나 표시할 수 있는 기능을 제공하여 스포일러를 방지해주는 축구 일정 어플리케이션 입니다.
 
 ## 🛠️Stacks
 
