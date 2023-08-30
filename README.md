@@ -1,5 +1,8 @@
 # NSfootball
-사용자의 기호에 따라 경기 결과를 숨기거나  표시할 수 있는 기능을 제공하여 스포일러를 방지해주는 축구 일정 어플리케이션 입니다.
+사용자의 기호에 따라 버튼을 눌러 경기 결과를 숨기거나  표시할 수 있는 기능을 제공하여 스포일러를 방지해주는 축구 일정 어플리케이션 입니다.
+<img width=20% height=20% src="https://github.com/ksaw1228/NSfootballServer/assets/48974380/a331874b-0a3e-48d4-97df-785718d4ddfb"/>
+<img width=20% height=20% src="https://github.com/ksaw1228/NSfootballServer/assets/48974380/e074dbbc-5be9-4c44-bd50-3287cde1b2e1"/>
+
 - **프론트 코드**:[NSfootball-Native](https://github.com/ksaw1228/NSfootball-native)
 
 ## 배포 상황
